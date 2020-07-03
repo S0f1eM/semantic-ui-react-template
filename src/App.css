@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:  #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.main-title {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.main-subtitle {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.3em;
+    margin-top: 0.2em;
+    color: 'rgb(157, 158, 160)'
+}
+
+.main-banner {
+	height: '80vh';
+    background-image: "https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg";
+}
+
+@media screen and (max-width: 728px) {
+
+	.main-title {
+	font-size: 2em;
+	margin-top: 1.5em;
+	}
+
+	.main-banner {
+		height: 50vh;
+	}
+
+  .ui.grid .ui.stackable.grid,
+  .ui.grid.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  img.ui.small.bordered.rounded.image.live-section-img-mobile {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .ui.vertical.segment {
+    border-bottom: 0px solid #fff;
+}
+
+  .ui.container {
+    margin-left: 2em !important;
+    margin-right: 2em !important;
+  }
+
+  .ui.container .text {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+
+  
+  .column,
+  .eight .wide .column,
+  .ui.centered.container.stackable.four.column.grid{
+    margin-left: 1em !important;
+    margin-right: 1em !important;
   }
 }
