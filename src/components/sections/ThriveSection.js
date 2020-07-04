@@ -13,14 +13,14 @@ const ThriveSection = () => (
 
       <CustomDivider name='Thrive' />
 
-      <BigCard url='http://moodcolors.surge.sh/'
+      <BigCard url='http://moodcolors.surge.sh/Article'
                imageURL='https://cdn.pixabay.com/photo/2017/01/26/13/36/norway-2010573_960_720.jpg'
                title='Everybody need this happy thing'
                description='This light-hearted, happy mood is shown with descriptions of laughter, 
                upbeat song, delicious smells, and bright colors. A cheerful mood fills you with joy and happiness.' 
                />    
       
-      <CustomButton name='More Thrive' />
+      <CustomButton name='More Thrive' url='http://moodcolors.surge.sh/Article'/>
       
     </Grid>
       

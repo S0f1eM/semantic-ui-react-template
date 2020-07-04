@@ -9,7 +9,7 @@ const CustomButton = props => (
       
           <Grid.Column textAlign='center'>
 
-            <Button as='a' href='#'
+            <Button as='a' href={props.url}
                     className="ui button" 
                     size='huge' 
                     style={{ 

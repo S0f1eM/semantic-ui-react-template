@@ -6,6 +6,7 @@ import {
 
 
 const LiveCard = props => (
+
   
   <a href={props.url} style={{ cursor: 'cursor' }}>
             
@@ -15,9 +16,10 @@ const LiveCard = props => (
 
     <p style={{ fontSize:'1.2em', color: 'rgb(157, 158, 160)'}}>{props.description}</p>
 
-    <Image bordered rounded  src={props.imageURL} />
+    <Image bordered rounded  src={props.imageURL} style={{width: '500px', height: 'auto'}}/>
 
   </a>
+
 
 )
 

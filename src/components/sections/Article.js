@@ -1,118 +1,164 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
-  Container,
   Header,
-  Grid
+  Grid,
+  Segment,
+  Divider,
+  Icon
 } from 'semantic-ui-react';
-//import Card from '../elements/Card';
-import ExploreSection from './ExploreSection';
+
+import ResponsiveContainer from '../../components/containers/ResponsiveContainer';
 import LiveCard from '../../components/elements/LiveCard';
+import CustomDivider from '../elements/CustomDivider';
+import CustomCard from '../elements/CustomCard';
+
+
 
 const Background = "https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg";
 
 const Article = ({ mobile }) => (
-  
-  <Container>
+  <>
+    <ResponsiveContainer>
+      <Segment vertical className="ui container">
+        
+        <Header as='h1' content='Hong Kong Neon Road' className='main-title' 
+                style={{ fontSize: mobile ? '2em' : '2.8em', marginTop: mobile ? '1.5em' : '0.5em' }} />
 
+        <Header as='h2' content='Mood Colors & photography inspirations. By Judy June'
+                style={{ fontSize: mobile ? '1.5em' : '1.3em' }} />
+        
+        <p>Mood Colors & photography inspirations. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sem dictum, auctor quam eu, eleifend nulla. 
+        Cras sit amet gravida diam, quis pretium nisl. Aliquam mollis quam a eros finibus, quis rutrum urna facilisis. 
+        Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
- 
-    <Header
-      as='h1'
-      content='Hong Kong Neon Road'
-      className='main-title'
-      style={{
-        fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Droid Sans", "Helvetica Neue", sans-serif`,
-        fontSize: mobile ? '2em' : '2.8em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '0.5em',
-      }}
-    />
+        <Header as="div" style={{ marginTop: '3em', height: '80vh', backgroundImage: `url(${Background})` }}/>
+        <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small>
 
+        <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
 
-    <Header
-      as='h2'
-      content='Mood Colors & photography inspirations.'
-      style={{
-            fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Droid Sans", "Helvetica Neue", sans-serif`,
-        fontSize: mobile ? '1.5em' : '1.3em',
-        fontWeight: 'normal',
-        marginTop: '0.2em',
-        color: 'rgb(157, 158, 160)'
-      }}
-    />
-    <Header
-      as="div"
-      style={{  
-        height: '80vh',
-        backgroundImage: `url(${Background})`
-    }}
-    />
-    <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small>
     
-    <Header
-      as='h2'
-      content='Hong Kong Neon Road - Mood Colors & photography inspirations. By Judy June'
-      style={{
-            fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Droid Sans", "Helvetica Neue", sans-serif`,
-        fontSize: mobile ? '1.5em' : '1.3em',
-        fontWeight: 'normal',
-        marginTop: '0.2em',
-        color: 'rgb(157, 158, 160)'
-      }}
-    />
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+        Duis vestibulum, tortor in varius egestas, lectus mauris volutpat purus, sit amet semper leo dolor nec dui. Etiam rhoncus eros eget fermentum viverra.
+        Nam neque eros, fermentum eu tempor id, accumsan non dui. Praesent hendrerit finibus lectus, vitae rutrum nunc. Etiam suscipit non ex et volutpat. Nunc eu tempus dolor.
+        Nam vel erat ex.</p>
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+        Duis vestibulum, tortor in varius egestas, lectus mauris volutpat purus, sit amet semper leo dolor nec dui. Etiam rhoncus eros eget fermentum viverra.
+        Nam neque eros, fermentum eu tempor id, accumsan non dui. Praesent hendrerit finibus lectus, vitae rutrum nunc. Etiam suscipit non ex et volutpat. Nunc eu tempus dolor.
+        Nam vel erat ex.</p>
 
-    <p style={{ fontSize: '1.2em' }}>Mood Colors & photography inspirations. 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sem dictum, auctor quam eu, eleifend nulla. 
-    Cras sit amet gravida diam, quis pretium nisl. Aliquam mollis quam a eros finibus, quis rutrum urna facilisis. 
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut finibus, purus sit amet pellentesque sodales, nibh lectus facilisis orci, non rhoncus eros massa a enim.
-    Duis sodales lectus pulvinar, sagittis tellus non, dapibus elit. Integer vitae ipsum a metus maximus congue vitae ac enim.
-    Quisque eget libero augue. Sed ac orci et erat volutpat tempor eu vitae lectus.
-    </p>
-      <Grid.Column stackable>
-     
-          <Grid.Column width={8}>
 
+    <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
+
+    <Grid columns={2} stackable >
+      
+      <Grid.Column stackable>            
           <LiveCard 
-            url='http://moodcolors.surge.sh/' 
-            title='Tokyo by night lightning building' 
-            imageURL='https://cdn.pixabay.com/photo/2020/01/14/03/53/tokyo-4763976_960_720.jpg'
-            description='...'/>
-            
-          </Grid.Column>
+              title='' 
+              imageURL='https://cdn.pixabay.com/photo/2019/06/10/09/14/guangzhou-4263768_960_720.jpg'
+              description=''/> 
+          <p>China away neon building - <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small></p>
+        
+      </Grid.Column>
+
+        <Grid.Column stackable>
+            <LiveCard 
+              title='' 
+              imageURL='https://cdn.pixabay.com/photo/2020/01/15/19/03/shinjuku-4768674_960_720.jpg'
+              description=''/>
+             <p>Tokyo neon night signs cyberpunk - <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small></p>
+        </Grid.Column>
+
+        <Grid.Column stackable>
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+       </p>
+        </Grid.Column>
+                <Grid.Column stackable>
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+        </p>
+        </Grid.Column>
+
+  </Grid>
+
+    <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
+
+  <Grid centered columns={4} stackable >
+       
+        <Grid.Row>
+
+          <CustomCard imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014618_960_720.jpg'/>
+
+          <CustomCard imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg' />
+
+          <CustomCard imageURL='https://cdn.pixabay.com/photo/2015/07/11/23/00/portland-841428_960_720.jpg' />
+
+          <CustomCard imageURL='https://cdn.pixabay.com/photo/2017/08/07/13/59/dark-2604109_960_720.jpg' />
+
+         </Grid.Row>
+
+      </Grid>
+
+      <Grid.Column stackable> 
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+        Duis vestibulum, tortor in varius egestas, lectus mauris volutpat purus, sit amet semper leo dolor nec dui. Etiam rhoncus eros eget fermentum viverra.
+        Nam neque eros, fermentum eu tempor id, accumsan non dui. Praesent hendrerit finibus lectus, vitae rutrum nunc. Etiam suscipit non ex et volutpat. Nunc eu tempus dolor.
+        Nam vel erat ex.</p>
+        <p>Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
+        Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
+        Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
+        </p>
+      </Grid.Column>
+
+      <p><small>Image Credits from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small></p>
+
+      <CustomDivider name='MORE ARTICLES' />
 
 
-    </Grid.Column>
+       <Grid centered columns={4} stackable >
+       
+        <Grid.Row>
 
-  <p>
-    Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
-    Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
-    Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
-    Duis vestibulum, tortor in varius egestas, lectus mauris volutpat purus, sit amet semper leo dolor nec dui. Etiam rhoncus eros eget fermentum viverra.
-    Nam neque eros, fermentum eu tempor id, accumsan non dui. Praesent hendrerit finibus lectus, vitae rutrum nunc. Etiam suscipit non ex et volutpat. Nunc eu tempus dolor.
-    Nam vel erat ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce molestie ipsum sed urna volutpat, nec sagittis mi rhoncus.
-    Etiam interdum aliquam pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultrices neque a eros sagittis consequat. 
-    Phasellus sed nulla sit amet arcu tincidunt volutpat id ac justo. Nunc ornare suscipit enim, sed gravida ipsum semper ac. Pellentesque posuere sapien mi, lobortis tincidunt ante vulputate eu. 
-    Aenean mi sapien, ultricies sit amet sagittis ut, convallis sit amet tortor. Aenean ipsum augue, dapibus vitae mollis at, consectetur ut felis.
-    Aliquam facilisis dolor urna. Nulla ut sem semper, posuere est sed, pharetra turpis.
-    In elementum nunc sed orci dignissim, eget bibendum urna euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas nec sodales ex. 
-    Nullam viverra tellus fermentum neque ornare, sed maximus ex aliquet. Vestibulum consequat, leo non interdum hendrerit, nisl libero pharetra lacus, sit amet tristique justo ligula sed leo.
-    Sed varius condimentum tellus, et rhoncus tellus aliquet eget. Vestibulum sit amet dui imperdiet, maximus turpis eu, venenatis sapien. Sed mattis nisl quis mauris eleifend consequat.
-    Proin id odio nunc. Nam sollicitudin urna at magna fermentum, in vestibulum nisi luctus. Curabitur in massa sit amet est scelerisque mollis.
-    Etiam lacus orci, iaculis sit amet malesuada mollis, malesuada nec sapien. Curabitur non libero condimentum, tempus metus cursus, finibus tellus. 
-    Ut euismod scelerisque tortor, dapibus rhoncus ante condimentum quis. Aenean vel lorem eu nunc sollicitudin posuere. Pellentesque aliquet mollis purus nec cursus.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque scelerisque volutpat leo in eleifend.
-    Proin vitae vestibulum enim, quis convallis turpis. Nulla placerat neque in turpis interdum pretium. Sed vel placerat velit.
-    Aenean auctor nisi a condimentum ultrices. Aliquam tristique, turpis sed sodales ultricies, orci dolor gravida arcu, ac rutrum nunc lectus et quam. 
-    </p>  
+         <CustomCard url='http://moodcolors.surge.sh/Article' 
+                imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014618_960_720.jpg' 
+                title='City Lights - Japan' 
+                description='Midnight walk with city lights.' />
 
-    <ExploreSection />
+          <CustomCard url='http://moodcolors.surge.sh/Article' 
+                imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg' 
+                title='Osaka by night - Japan' 
+                description=' A rainy night under the lights.' />
 
-  </Container>
+          <CustomCard url='http://moodcolors.surge.sh/Article' 
+                imageURL='https://cdn.pixabay.com/photo/2015/07/11/23/00/portland-841428_960_720.jpg' 
+                title='Portland Oregon Tourism' 
+                description='Lost in Oregon...my deer.' />
+
+          <CustomCard url='http://moodcolors.surge.sh/Article' 
+                imageURL='https://cdn.pixabay.com/photo/2017/08/07/13/59/dark-2604109_960_720.jpg' 
+                title='Dark night Neon Shop' 
+                description="I'm Neon, specialist." />
+         </Grid.Row>
+
+      </Grid>
+
+    <Divider horizontal style={{ color: '#FFA26D', margin: '5em 0'}}></Divider>
+
+
+</Segment>
+
+    </ResponsiveContainer>
+  </>
 
 )
 

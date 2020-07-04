@@ -25,7 +25,7 @@ const LiveSection = () => (
                <Grid container stackable >
                   
                   <Grid.Column width={4}> 
-                    <a href='http://moodcolors.surge.sh/' style={{ cursor: 'cursor' }}>
+                    <a href='https://moodcolors.surge.sh/Article' style={{ cursor: 'cursor' }}>
                       <Image 
                         className='live-section-img-mobile'
                         bordered 
@@ -38,12 +38,12 @@ const LiveSection = () => (
                   <Grid.Column width={12}> 
             
                     <Header as='h3' style={{ fontSize: '1.5em' }}>
-                       <a href='http://moodcolors.surge.sh/' style={{ color: '#000', cursor: 'cursor' }}>
+                       <a href='https://moodcolors.surge.sh/Article' style={{ color: '#000', cursor: 'cursor' }}>
                        Midnight Mood around the world</a>
                     </Header>
                     
                     <p style={{ fontSize: '1.20em' }}>
-                    <a href='http://moodcolors.surge.sh/' style={{ color: '#000', cursor: 'cursor' }}>
+                    <a href='https://moodcolors.surge.sh/Article' style={{ color: '#000', cursor: 'cursor' }}>
                     In his tractibus navigerum nusquam visitur flumen sed in locis plurimis 
                     aquae suapte natura calentes emergunt ad usus aptae multiplicium medelarum.
                     In his tractibus navigerum nusquam visitur flumen sed in locis plurimis.
@@ -63,13 +63,13 @@ const LiveSection = () => (
                   <Grid.Column width={12}> 
     
                     <Header as='h3' style={{ fontSize: '1.5em' }}>
-                      <a href='http://moodcolors.surge.sh/' style={{ color: '#000', cursor: 'cursor' }}>
+                      <a href='http://moodcolors.surge.sh/Article' style={{ color: '#000', cursor: 'cursor' }}>
                        Mood Tourism experiences
                       </a>
                     </Header>
                     
                     <p style={{ fontSize: '1.20em' }}>
-                    <a href='http://moodcolors.surge.sh/' style={{ color: '#000', cursor: 'cursor' }}>
+                    <a href='http://moodcolors.surge.sh/Article' style={{ color: '#000', cursor: 'cursor' }}>
                     In his tractibus navigerum nusquam visitur flumen sed in locis plurimis 
                     aquae suapte natura. In his tractibus navigerum nusquam visitur flumen sed in locis plurimis 
                     aquae suapte natura.
@@ -78,7 +78,7 @@ const LiveSection = () => (
                 </Grid.Column>
 
                   <Grid.Column width={4}> 
-                    <a href='http://moodcolors.surge.sh/' style={{ cursor: 'cursor' }}>
+                    <a href='http://moodcolors.surge.sh/Article' style={{ cursor: 'cursor' }}>
                     <Image 
                       className='live-section-img-mobile'
                       bordered 
@@ -99,7 +99,7 @@ const LiveSection = () => (
           <Grid.Column width={8}>
 
           <LiveCard 
-            url='http://moodcolors.surge.sh/' 
+            url='https://moodcolors.surge.sh/Article' 
             title='Neon Lovers and Creative Coding' 
             imageURL='https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_960_720.jpg'
             description='Dive in creatives coders inspirations process and momentum...'/>
@@ -112,7 +112,7 @@ const LiveSection = () => (
   </Grid>
 
           
-      <CustomButton name='Live More' style={{ margin: '2em 0em 3em' }} />
+      <CustomButton name='Live More' url='https://moodcolors.surge.sh/Article' style={{ margin: '2em 0em 3em' }} />
    
     
 </>

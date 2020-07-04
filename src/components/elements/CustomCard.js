@@ -5,7 +5,7 @@ import {
 } from 'semantic-ui-react';
 
 
-const Cards = props => (
+const CustomCard = props => (
 
  <Grid.Column>
     <a href={props.url}
@@ -38,4 +38,4 @@ const Cards = props => (
 )
 
 
-export default Cards;
+export default CustomCard;

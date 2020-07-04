@@ -8,8 +8,6 @@ body {
    color:  #282c34;
 }
 
-
-
 .main-title {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -32,7 +30,27 @@ body {
     background-image: "https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg";
 }
 
-@media screen and (max-width: 728px) {
+h1.ui.header.main-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.8em;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 0.5em;
+}
+
+h2.ui.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-top: 0.2em;
+  color: rgb(157, 158, 160);
+}
+
+p {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
 
 	.main-title {
 	font-size: 2em;
@@ -70,7 +88,7 @@ body {
   
   .column,
   .eight .wide .column,
-  .ui.centered.container.stackable.four.column.grid{
+  .ui.centered.container.stackable.four.column.grid {
     margin-left: 1em !important;
     margin-right: 1em !important;
   }
