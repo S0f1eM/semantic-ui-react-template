@@ -11,12 +11,11 @@ const CustomDivider = props => (
                 horizontal
                 style={{ 
                     textTransform: 'uppercase',
-                    margin: '3em 1em'
+                    margin: '4em 0'
                 }} >
                 {props.name}
         </Divider>
     </>
 )
 
-
-    export default CustomDivider;
+export default CustomDivider;

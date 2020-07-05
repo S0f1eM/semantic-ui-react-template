@@ -12,7 +12,7 @@ import ThriveSection from './ThriveSection';
 const HomepageLayout = () => (
 	 	<ResponsiveContainer>
 	    	<Segment vertical>
-	    	  <PageHeading />
+	    	  <PageHeading mobile/>
 		      <LiveSection />
 		      <ExploreSection />
 		      <ThriveSection />

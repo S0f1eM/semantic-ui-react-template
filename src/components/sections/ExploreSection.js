@@ -38,7 +38,7 @@ const ExploreSection = () => (
 
       </Grid>
 
-      <CustomButton name='More Explorations' url='http://moodcolors.surge.sh/Article' style={{ marginTop: '2em' }}/>  
+      <CustomButton name='More Explorations' url='/Article' style={{ marginTop: '2em' }}/>  
 
 </>
 

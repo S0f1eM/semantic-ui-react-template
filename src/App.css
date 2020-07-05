@@ -50,6 +50,63 @@ p {
   font-size: 1.2em;
 }
 
+a, a:hover {
+  color: #000;
+  cursor: 'cursor';
+}
+
+h1 .ui.header.main-title ,
+h2 .ui.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.ui.button.login {
+  margin-left: 0.5em;
+  background-color:#fff;                                      
+  color:#F6075C;
+  border: 1px solid #F6075C;
+  cursor: 'cursor';
+}
+
+h2 .ui.header {
+  color: rgb(157, 158, 160);
+  margin-top: 0.2em;
+}
+
+.ui.large.button {
+  background-color:#fff;
+  color:#F6075C;
+  border: 2px solid #F6075C;
+  cursor: 'cursor';
+}
+
+.ui.button.customButton {
+  border: 2px solid #f6075c;
+  color:#f6075c;
+  background-color:#fff;
+  cursor:'cursor';
+  margin-top: 1em;
+}
+
+.ui.menu a.item:hover:not(.logo),
+.ui.secondary.menu a.item:hover {
+  background: #fff2f6;
+  color: #f6075c;
+}
+
+a.ui.button:hover,
+button.ui.large.button:hover {
+  background: #f6075c;
+  color: #fff;
+}
+
+.ui.menu a.item.logo:hover {
+  background: #fff;
+  color: #f6075c;
+}
+            
 @media screen and (max-width: 768px) {
 
 	.main-title {
@@ -92,4 +149,5 @@ p {
     margin-left: 1em !important;
     margin-right: 1em !important;
   }
+
 }

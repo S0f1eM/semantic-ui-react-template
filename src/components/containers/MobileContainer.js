@@ -10,7 +10,6 @@ import {
   Sidebar
 } from 'semantic-ui-react';
 
-import PageHeading from '../../components/sections/PageHeading';
 import getWidth from '../../actions/getWidth';
 
 
@@ -42,7 +41,7 @@ class MobileContainer extends Component {
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
-          <Segment textAlign='center' style={{ minHeight: 350, padding: '1em 0em' }} vertical >
+          <Segment textAlign='center' vertical >
             <Container>
               <Menu secondary size='large'>
                 <Menu.Item onClick={this.handleToggle}>
@@ -57,7 +56,6 @@ class MobileContainer extends Component {
                 </Menu.Item>
               </Menu>
             </Container>
-            <PageHeading mobile/>
           </Segment>
           {children}
         </Sidebar.Pusher>
