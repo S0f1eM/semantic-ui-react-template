@@ -1,8 +1,17 @@
 
-##TO DO NEXT: 
+## A template page made with react-semantic-ui
+
+### Made with (thanks to) :
+* semantic-ui
+* react 
+* lodash
+* faker
+
+## TO DO NEXT: 
 * menu link
 * zoom image gallery
 * login page
+* to fix: link to Article with button
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
