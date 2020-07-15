@@ -13,7 +13,6 @@ import LiveCard from '../../components/elements/LiveCard';
 import CustomDivider from '../elements/CustomDivider';
 import CustomCard from '../elements/CustomCard';
 
-const Background = "https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg";
 const someContent =`Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
         Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
         Suspendisse sodales fermentum tellus at consequat. Proin purus nulla, consequat eu fermentum quis, dapibus in tellus.
@@ -43,19 +42,16 @@ const Article = ({ mobile }) => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et sem dictum, auctor quam eu, eleifend nulla. 
         Cras sit amet gravida diam, quis pretium nisl. </p>
 
-        <Header as="div" style={{ marginTop: '3em', height: '80vh', backgroundImage: `url(${Background})` }}/>
-        <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small>
-
         <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
 
         <p>{someContent}</p>
-        <p>{someContent}</p>
+        <p>{shortContent}</p>
 
     <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
 
     <Grid columns={2} stackable >     
       <Grid.Column stackable>            
-        <LiveCard description='China away neon building' imageURL='https://cdn.pixabay.com/photo/2019/06/10/09/14/guangzhou-4263768_960_720.jpg'/> 
+        <LiveCard imageURL='https://cdn.pixabay.com/photo/2019/06/10/09/14/guangzhou-4263768_960_720.jpg'/> 
           <p>China away neon building - <small>Image by <a href="https://pixabay.com/users/Philippsaal-8486910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Philippsaal</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4103334">Pixabay</a></small></p>  
       </Grid.Column>
       <Grid.Column stackable>
