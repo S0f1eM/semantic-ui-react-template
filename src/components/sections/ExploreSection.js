@@ -7,12 +7,12 @@ import CustomCard from '../elements/CustomCard';
 
 const ExploreSection = () => (
 
-<>
+  <>
       <Grid container centered columns={4} stackable >
        
         <Grid.Row>
 
-          <CustomDivider name='explore'/>
+          <CustomDivider name='Explore' />
 
           <CustomCard url='http://moodcolors.surge.sh/Article' 
                 imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014618_960_720.jpg' 
@@ -36,9 +36,9 @@ const ExploreSection = () => (
 
          </Grid.Row>
 
-      </Grid>
+        <CustomButton name='More Explorations' url='/Article' className="explore-more-button" />  
 
-      <CustomButton name='More Explorations' url='/Article' style={{ marginTop: '2em' }}/>  
+      </Grid>
 
 </>
 

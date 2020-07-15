@@ -8,7 +8,7 @@ const CustomCard = props => (
    <Link to={props.url} title={props.description}>
       <Image bordered rounded size='large' src={props.imageURL} />
       <h4 style={{ fontSize: '1.5em' }}>{props.title}</h4>
-      <p style={{ fontSize: '1em', color: 'rgb(157, 158, 160)'}}>{props.description}</p>
+      <p style={{ color: 'rgb(157, 158, 160)'}}>{props.description}</p>
     </Link>
 </Grid.Column>
 )

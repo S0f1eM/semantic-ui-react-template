@@ -7,7 +7,7 @@ const CustomDivider = props => (
     <>
         <Divider as='h4'
                 className='header'
-                id='explore'
+                id={props.name}
                 horizontal
                 style={{ 
                     textTransform: 'uppercase',

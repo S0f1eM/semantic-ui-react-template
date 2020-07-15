@@ -5,15 +5,15 @@ const Navigation = () => {
 
   return(
   <>
-    <Menu.Item as='a' href='/' style={{ fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Droid Sans", "Helvetica Neue", sans-serif`, paddingLeft: '0' }} className="logo" >
-      Mood <span style={{color:"#F6075C"}}> Colors</span>
-    </Menu.Item> 
-    <Menu.Item position='right' style={{ fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Droid Sans", "Helvetica Neue", sans-serif`, paddingRight: '0' }}>
-    <Menu.Item as='a' href='/Article'>Explore</Menu.Item>
-    <Menu.Item as='a' href='/Article'>Thrive</Menu.Item>
-    <Menu.Item as='a' href='/Article'>Live</Menu.Item>
+    <Menu.Header as='a' href='/' className="logo" >
+      Mood <span> Colors</span>
+    </Menu.Header> 
+
+    <Menu.Item position='right' className="right-menu">
+      <Menu.Item as='a' href='#Live'>Live</Menu.Item>
+      <Menu.Item as='a' href='#Explore'>Explore</Menu.Item>
+      <Menu.Item as='a' href='#Thrive'>Thrive</Menu.Item>
+      
       <Button as='button' className='ui button login' href='#'> Log In </Button>
     </Menu.Item>
   </>

@@ -8,6 +8,24 @@ body {
    color:  #282c34;
 }
 
+.logo {
+   padding-left: 0;
+   font-size: 2em;
+   margin-top: 0.7em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a.header.logo span{
+  color: #F6075C;
+}
+
+.right-menu {
+  padding-right: 0;
+}
+
 .main-title {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -69,6 +87,10 @@ h2 .ui.header {
   border: 1px solid #F6075C;
   cursor: 'cursor';
 }
+.ui.secondary.menu .item,
+.ui.vertical.menu > .item {
+  cursor: pointer;
+}
 
 h2 .ui.header {
   color: rgb(157, 158, 160);
@@ -106,6 +128,10 @@ button.ui.large.button:hover {
   background: #fff;
   color: #f6075c;
 }
+
+.explore-more-button {
+  margin-top: 2em;
+}
             
 @media screen and (max-width: 768px) {
 
@@ -114,9 +140,9 @@ button.ui.large.button:hover {
 	margin-top: 1.5em;
 	}
 
-	.main-banner {
-		height: 50vh;
-	}
+  p {
+    font-size: 1em;
+  }
 
   .ui.grid .ui.stackable.grid,
   .ui.grid.container {
@@ -124,8 +150,12 @@ button.ui.large.button:hover {
     margin-right: auto !important;
   }
 
+  #Live {
+    margin: 4em 0 0 !important;
+  }
+
   img.ui.small.bordered.rounded.image.live-section-img-mobile {
-    width: 100%;
+    display: none;
   }
 
   .ui.vertical.segment {
@@ -148,6 +178,10 @@ button.ui.large.button:hover {
   .ui.centered.container.stackable.four.column.grid {
     margin-left: 1em !important;
     margin-right: 1em !important;
+  }
+
+  h4.ui.inverted.header:last-child {
+    margin-top: 4em;
   }
 
 }
