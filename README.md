@@ -13,7 +13,7 @@ A template made with react-semantic-ui.
 * [Dependencies](#dependencies)
 * [Installation](#setup)
 * [Author](#author)
-* [links](#links)
+* [More](#links)
 
 ## Links<a name="links"></a>
 
