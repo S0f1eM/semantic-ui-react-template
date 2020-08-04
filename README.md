@@ -23,9 +23,7 @@ A template made with react-semantic-ui.
 
 ## To do<a name="todo"></a>
 
-- [ ]  menu link
-- [ ]  zoom image gallery
-- [ ]  login page
+- [ ]  issue: menu link
 - [ ]  issue: link to Article with button
 
 ## Prerequisites<a name="prerequisites"></a> 
