@@ -34,10 +34,10 @@ class MobileContainer extends Component {
                   onHide={this.handleSidebarHide}
                   vertical
                   visible={sidebarOpened} >
-          <Menu.Item as='a'> Mood Colors </Menu.Item>
-          <Menu.Item as='a'>Explore</Menu.Item>
-          <Menu.Item as='a'>Thrive</Menu.Item>
-          <Menu.Item as='a'>Live</Menu.Item>
+          <Menu.Item as='a' href='/'> Mood Colors </Menu.Item>
+          <Menu.Item as='a' href='#Explore'>Explore</Menu.Item>
+          <Menu.Item as='a' href='#Thrive'>Thrive</Menu.Item>
+          <Menu.Item as='a' href='#Live'>Live</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
