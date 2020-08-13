@@ -8,7 +8,6 @@ A template made with react-semantic-ui.
 ### Table Of Contents
 * [Introduction](#intro)
 * [Links](#links)
-* [To Do](#todo)
 * [Prerequisites](#prerequisites)
 * [Dependencies](#dependencies)
 * [Installation](#setup)
@@ -20,11 +19,6 @@ A template made with react-semantic-ui.
 * *[Mood Colors](https://moodcolors.surge.sh/)*
 
 ![neon-template](/public/Screenshot_moodcolors.jpg)
-
-## To do<a name="todo"></a>
-
-- [ ]  issue: menu link
-- [ ]  issue: link to Article with button
 
 ## Prerequisites<a name="prerequisites"></a> 
 * npm
