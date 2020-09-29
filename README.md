@@ -3,7 +3,8 @@
 
 ## Introduction
 
-A template made with react-semantic-ui.
+A template made with react-semantic-ui. 
+⚠️ Some semantic shorthands props currently don't work properly on Google Chrome. ⚠️ Need investigations for fix, but it is OK on Mozilla Firefox.
 
 ### Table Of Contents
 * [Introduction](#intro)
