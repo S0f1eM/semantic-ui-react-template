@@ -9,7 +9,7 @@ import {
   Image
 } from 'semantic-ui-react';
 
-const Background = "https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg";
+const Background = "https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg";
 
 const PageHeading = ({ mobile }) => (
   
@@ -20,7 +20,7 @@ const PageHeading = ({ mobile }) => (
     <Header as='h2' content='Pages made with semantic-ui and Reactjs.'
       style={{ fontSize: mobile ? '1.5em' : '1.3em' }} />
 
-    <Image src= {Background} style={{ width:'100%', height: '80%'}} />
+    <Image src= {Background} style={{ width:'100%', height: '70%', maxHeight : '50rem'}} />
     
     <Header as='h3' style={{ fontSize: mobile? '1.2em' : '1.5em' }}>Hong Kong Neon Road</Header>
 
