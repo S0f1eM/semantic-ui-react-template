@@ -94,7 +94,7 @@ const Article = ({ mobile }) => (
                       description='Midnight walk with city lights.' 
                       url='/' />
 
-          <CustomCard imageURL='https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg' 
+          <CustomCard imageURL='https://cdn.pixabay.com/photo/2019/04/04/17/58/hong-kong-4103334_960_720.jpg' 
                       title='Osaka by night - Japan' 
                       description=' A rainy night under the lights.'
                       url='/' />
