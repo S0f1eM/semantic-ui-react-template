@@ -1,10 +1,10 @@
 
-# Mood-Colors template
+# Mood-Colors template  [![Netlify Status](https://api.netlify.com/api/v1/badges/fd60befb-8bde-41de-8407-119d0d5d395c/deploy-status)](https://app.netlify.com/sites/moodcolors/deploys)
+
 
 ## Introduction
 
 A template made with react-semantic-ui. 
-⚠️ Some semantic shorthands props currently don't work properly ⚠️ Need investigations for fix.
 
 ### Table Of Contents
 * [Introduction](#intro)
