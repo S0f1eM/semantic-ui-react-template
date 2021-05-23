@@ -5,13 +5,16 @@ import {
   Grid,
   Segment,
   Divider,
-  Icon
+  Icon,
+  Image
 } from 'semantic-ui-react';
 
 import ResponsiveContainer from '../../components/containers/ResponsiveContainer';
 import LiveCard from '../../components/elements/LiveCard';
 import CustomDivider from '../elements/CustomDivider';
 import CustomCard from '../elements/CustomCard';
+
+const url="https://cdn.pixabay.com/photo/2020/12/20/21/17/city-5848267_1280.jpg";
 
 const someContent =`Duis tincidunt vitae enim a maximus. Mauris gravida consectetur eros, ut pharetra nulla sollicitudin at.
         Morbi accumsan mi nec lectus sodales elementum quis ac ligula. Morbi id laoreet elit, in imperdiet dolor. Pellentesque consectetur facilisis eleifend. 
@@ -43,6 +46,8 @@ const Article = ({ mobile }) => (
         Cras sit amet gravida diam, quis pretium nisl. </p>
 
         <Divider horizontal style={{ color: '#FFA26D', margin: '3em 0'}}><Icon name="sun"  size="big" /></Divider>
+
+        <Image src= {url} style={{ width:'100%', maxHeight : '30rem'}} />
 
         <p>{someContent}</p>
         <p>{shortContent}</p>
